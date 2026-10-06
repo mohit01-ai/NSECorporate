@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 @CucumberOptions(
-        tags = "@verifyIndexNames",
+        tags = "@upperCircuit",
         features = "src/test/resources/features",
         glue = {"stepdefinitions", "hooks"},
         plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},

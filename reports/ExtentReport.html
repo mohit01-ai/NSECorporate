@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 5, 2026 08:55:39 am</span></a>
+<a href="#"><span class="badge badge-primary">Oct 6, 2026 08:52:16 am</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@verifyIndexNames</a><a class="dropdown-item" href="#">@homepage</a><a class="dropdown-item" href="#">@regression</a>
+<a class="dropdown-item" href="#">@upperCircuit</a><a class="dropdown-item" href="#">@topgainers</a><a class="dropdown-item" href="#">@topGainersFile</a><a class="dropdown-item" href="#">@Regression</a>
 </ul>
 </li>
 </ul>
@@ -90,9 +90,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Verify the home page scenarios</p>
+            <p class="name">Verify all link of market data</p>
             <p class="text-sm">
-              <span>8:55:40 am</span> / <span>00:00:27:025</span>
+              <span>8:52:17 am</span> / <span>00:01:15:324</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,10 +100,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Verify the home page scenarios</h5>
-<span class='badge badge-success'>10.05.2026 8:55:40 am</span>
-<span class='badge badge-danger'>10.05.2026 8:56:07 am</span>
-<span class='badge badge-default'>00:00:27:025</span>
+<h5 class="test-status text-pass">Verify all link of market data</h5>
+<span class='badge badge-success'>10.06.2026 8:52:17 am</span>
+<span class='badge badge-danger'>10.06.2026 8:53:32 am</span>
+<span class='badge badge-default'>00:01:15:324</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -116,7 +116,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify the name of index are matching correctly</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify all top 20 gainers are available</div>
       </div>
     </div>
         <div class="collapse">
@@ -126,20 +126,100 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.HomePageStepDefinition.userClickOnHomeIcon()">
-                <span>When user click on home icon</span>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.theUserGoToMarketData()">
+                <span>When the user go to market data</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.HomePageStepDefinition.theUserGetAllIndexNamesList()">
-                <span>When the user get all index names list</span>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.theUserGoToGainersLosers()">
+                <span>When the user go to Gainers losers</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.HomePageStepDefinition.verifyTheIndexNamesAreAppearingCorrectly(java.util.List<java.lang.String>)">
-                <span>Then Verify the index names are appearing correctly</span>
-      <div><table class='markup-table table '><tr><td>NIFTY 50</td></tr><tr><td>NIFTY NEXT 50</td></tr><tr><td>NIFTY BANK</td></tr><tr><td>NIFTY FIN SERVICE</td></tr><tr><td>NIFTY MID SELECT</td></tr><tr><td>NIFTY FPI 150</td></tr><tr><td>NIFTY 100</td></tr><tr><td>NIFTY MIDCAP 100</td></tr><tr><td>NIFTY SMLCAP 100</td></tr><tr><td>NIFTY AUTO</td></tr><tr><td>NIFTY FMCG</td></tr><tr><td>NIFTY IT</td></tr><tr><td>NIFTY ALPHA 50</td></tr><tr><td>NIFTY DIV OPPS 50</td></tr><tr><td>NIFTY GROWSECT 15</td></tr></table>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.theUserSelectTheIndex(java.lang.String)">
+                <span>When the user select the index "Securities > Rs 20"</span>
+      <div>
       </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.verifyTheTopGainersAreAvailable(int)">
+                <span>Then verify the top 20 gainers are available</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Verify top gainers data csv file is downloading properly</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.the_user_launch_the_application()">
+                <span>Given the user launch the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.theUserGoToMarketData()">
+                <span>When the user go to market data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.theUserGoToGainersLosers()">
+                <span>When the user go to Gainers losers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.theUserClickOnDownloadFile()">
+                <span>When the user click on download file</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.verifyTheFileIsDownloaded()">
+                <span>Then verify the file is downloaded</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Verify the top gainer has a upper circuit of 20 percent</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.the_user_launch_the_application()">
+                <span>Given the user launch the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.theUserGoToMarketData()">
+                <span>When the user go to market data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.theUserGoToGainersLosers()">
+                <span>When the user go to Gainers losers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.theUserSelectTheIndex(java.lang.String)">
+                <span>When the user select the index "Securities > Rs 20"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.theUserClickOnDownloadFile()">
+                <span>When the user click on download file</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.MarketDataStepDefinition.verifyTheTopGainerHasATwentyPercentUpperCircuit()">
+                <span>Then verify the top gainer has a twenty percent upper circuit</span>
       <div>
       </div>
               </div>
@@ -162,7 +242,7 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -171,12 +251,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@verifyIndexNames</p>
+<p class="name">@upperCircuit</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@verifyIndexNames</h4>
+<h4>@upperCircuit</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -190,11 +270,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>08:55:40 am</td>
+<td>08:53:01 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify the name of index are matching correctly</a>
+<a href="#" class="linked" test-id='1' id='28'>Verify the top gainer has a upper circuit of 20 percent</a>
 <div class="">
-<span class="badge badge-default">Verify the home page scenarios.Verify the name of index are matching correctly</span>
+<span class="badge badge-default">Verify all link of market data.Verify the top gainer has a upper circuit of 20 percent</span>
 </div>
 </td>
 </tr>
@@ -207,12 +287,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@homepage</p>
+<p class="name">@topgainers</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@homepage</h4>
+<h4>@topgainers</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -226,11 +306,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>08:55:40 am</td>
+<td>08:52:17 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify the name of index are matching correctly</a>
+<a href="#" class="linked" test-id='1' id='2'>Verify all top 20 gainers are available</a>
 <div class="">
-<span class="badge badge-default">Verify the home page scenarios.Verify the name of index are matching correctly</span>
+<span class="badge badge-default">Verify all link of market data.Verify all top 20 gainers are available</span>
 </div>
 </td>
 </tr>
@@ -243,12 +323,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@regression</p>
+<p class="name">@topGainersFile</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@regression</h4>
+<h4>@topGainersFile</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -262,11 +342,67 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>08:55:40 am</td>
+<td>08:52:37 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify the name of index are matching correctly</a>
+<a href="#" class="linked" test-id='1' id='15'>Verify top gainers data csv file is downloading properly</a>
 <div class="">
-<span class="badge badge-default">Verify the home page scenarios.Verify the name of index are matching correctly</span>
+<span class="badge badge-default">Verify all link of market data.Verify top gainers data csv file is downloading properly</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:17 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify all top 20 gainers are available</a>
+<div class="">
+<span class="badge badge-default">Verify all link of market data.Verify all top 20 gainers are available</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:37 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>Verify top gainers data csv file is downloading properly</a>
+<div class="">
+<span class="badge badge-default">Verify all link of market data.Verify top gainers data csv file is downloading properly</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:01 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Verify the top gainer has a upper circuit of 20 percent</a>
+<div class="">
+<span class="badge badge-default">Verify all link of market data.Verify the top gainer has a upper circuit of 20 percent</span>
 </div>
 </td>
 </tr>
@@ -287,13 +423,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 5, 2026 08:55:39 am</h3>
+<h3>Oct 6, 2026 08:52:16 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 5, 2026 08:56:07 am</h3>
+<h3>Oct 6, 2026 08:53:32 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -344,7 +480,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -364,7 +500,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>16</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -383,7 +519,7 @@
 </div></div>
 <script>
 var timeline = {
-"Verify the home page scenarios":27.025
+"Verify all link of market data":75.324
 };
 </script>
 <div class="row">
@@ -393,7 +529,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@verifyIndexNames</td>
+<td>@upperCircuit</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -401,7 +537,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@homepage</td>
+<td>@topgainers</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -409,8 +545,16 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@regression</td>
+<td>@topGainersFile</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Regression</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -430,13 +574,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 3,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 4,
+passGrandChild: 16,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,

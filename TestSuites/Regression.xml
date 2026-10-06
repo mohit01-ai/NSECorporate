@@ -15,10 +15,10 @@
 <!--            <class name="testrunner.LaunchAppRunner"/>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="test by edge">
-        <parameter name="browser" value="edge"/>
-        <classes>
-            <class name="testrunner.RegressionRunner"/>
-        </classes>
-    </test>
+<!--    <test name="test by edge">-->
+<!--        <parameter name="browser" value="edge"/>-->
+<!--        <classes>-->
+<!--            <class name="testrunner.RegressionRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

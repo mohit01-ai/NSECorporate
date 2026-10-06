@@ -1,5 +1,6 @@
 package baseclass;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -94,6 +95,8 @@ public class Driverfactory {
             e.printStackTrace();
 
         }
+//        JavascriptExecutor execute = (JavascriptExecutor) driver.get();
+//        execute.executeScript("document.body.style.zoom='80%'");
         driver.get().get(prop.getProperty("URL"));
         driver.get().manage().window().maximize();
         driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

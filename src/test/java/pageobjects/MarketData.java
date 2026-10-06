@@ -88,8 +88,6 @@ public class MarketData {
         if (downloaded) {
             Assert.assertTrue(downloaded, "Top 20 gainers file is downloaded successfully");
         } else Assert.fail("Top 20 gainers file is not downloaded");
-
-
     }
 
     public void verifyUpperCircuit() throws Exception {
@@ -98,7 +96,7 @@ public class MarketData {
         double data = 0;
         assert files != null;
         for (File file : files) {
-            if (file.getName().startsWith("T20-GL-gainers-")) {
+            if (file.getName().startsWith("T20-GL-gainers-SecGtr")) {
 
                 data = Double.parseDouble(CsvReader.getCellData(file.getAbsolutePath(), 1, 6));
                 break;
