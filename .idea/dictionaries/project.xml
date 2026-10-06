@@ -2,6 +2,8 @@
   <dictionary name="project">
     <words>
       <w>driverfactory</w>
+      <w>gainloss</w>
+      <w>marketdata</w>
     </words>
   </dictionary>
 </component>

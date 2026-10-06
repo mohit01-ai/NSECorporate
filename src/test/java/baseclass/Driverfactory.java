@@ -19,11 +19,11 @@ import java.util.Properties;
 public class Driverfactory {
 
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    private static ThreadLocal<String> browserName = new ThreadLocal<>();
+    private static final ThreadLocal<String> browserName = new ThreadLocal<>();
     public static Properties prop;
 
-    public static ThreadLocal<String> getBrowser() {
-        return browserName;
+    public static String getBrowser() {
+        return browserName.get();
     }
 
     public static void setBrowser(String browser) {

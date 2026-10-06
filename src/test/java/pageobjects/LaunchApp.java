@@ -1,14 +1,12 @@
 package pageobjects;
 
-import baseclass.BaseClass;
-import baseclass.Driverfactory;
 import org.openqa.selenium.WebDriver;
 
-public class LaunchApp extends BaseClass {
+public class LaunchApp {
+WebDriver driver;
 
-
-    public LaunchApp() {
-       super();
+    public LaunchApp(WebDriver driver) {
+      this.driver = driver;
     }
     public void launchUrl(){
         System.out.println("------------------Application Launched-------------------------");
